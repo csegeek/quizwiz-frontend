@@ -1,0 +1,12 @@
+.circular--square {
+        border-radius: 50%; 
+        width: 200px;
+        height: 200px;
+     }
+    
+.custom-input {
+    font-size: 16px; /* Adjust the font size */
+    padding: 10px;   /* Adjust the padding */
+    width: 400px;
+}
+  
