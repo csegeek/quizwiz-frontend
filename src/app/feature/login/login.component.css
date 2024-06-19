@@ -1,0 +1,40 @@
+.circular--square {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.custom-input {
+    font-size: 16px;
+    /* Adjust the font size */
+    padding: 10px;
+    /* Adjust the padding */
+    width: 400px;
+}
+
+mat-card {
+    max-width: fit-content;
+    /* Adjust the maximum width as needed */
+    padding: 20px;
+    align-self: center;
+  /*background-color: whitesmoke; */
+    background-color: rgba(229, 221, 221, 0.13);
+    position: relative;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+}
+
+.loginpage {
+    background: rgb(31, 16, 23);
+    background: radial-gradient(circle, rgb(210, 174, 190) 0%, rgb(171, 177, 187) 100%);
+    background-color: #f0f0f0; /* Set your desired background color */
+    padding: 80px; 
+}
+.warning{
+    background: 'red';
+ }

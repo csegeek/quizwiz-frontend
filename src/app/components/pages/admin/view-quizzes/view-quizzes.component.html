@@ -1,0 +1,18 @@
+<div class="container-fluid" *ngFor="let q of quizzes">
+<div class="card mt-4" style="width:18rem;">
+  <div class="card-body">
+    <img class="card-img-top" 
+    width="100px"
+    height="100px"
+    radius="10"
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTauc4bISr2dlL5VXSC33Tp11EjbPS3y1KqHg&usqp=CAU"
+    alt="Card image cap">
+    <h5 class="card-title">{{q.title}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted ">{{q.category.title}}</h6>
+    <p class="card-text">{{q.description}}</p>
+    <button href="#" class="btn btn-outline-primary mx-2 ">Questions</button>
+    <a class="btn btn-outline-danger" style="pointer-events: none; cursor: default;">Max Marks {{q.maxMarks}}</a>
+    <a class="btn btn-outline-danger mx-2 my-2" style="pointer-events: none; cursor: default;">No of Questions {{q.noOfQuestions}}</a>
+  </div>
+</div>
+</div>

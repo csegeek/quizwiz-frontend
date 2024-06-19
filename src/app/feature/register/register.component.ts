@@ -31,7 +31,7 @@ export class RegisterComponent {
     this.userService.addUser(this.user).subscribe(
       (data) => {
         console.log(data); 
-        // *****SweetAlert*****
+        //*****SweetAlert*****
       Swal.fire({
         icon: 'success',
         title: 'Registration Successful',

@@ -1,2 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-light loginpage">
+    <div class="container-fluid">
+        <a class="navbar-brand">
+            <img src="../../../assets/logo.png" height="28" alt="quiz-wiz logo">
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link active">Home</a>
+                <a href="#" class="nav-item nav-link">Profile</a>
+                <a href="#" class="nav-item nav-link">Messages</a>
+                <a href="#" class="nav-item nav-link disabled" tabindex="-1">Reports</a>
+            </div>
+            <div class="navbar-nav ms-auto">
+                <a *ngIf="!login.isLoggedIn()" href="/login" class="nav-item nav-link">Login</a>
+                <a *ngIf="!login.isLoggedIn()" href="/signup" class="nav-item nav-link">Sign-up</a>
+                <p *ngIf="login.isLoggedIn()"  class="nav-item nav-link">{{username}}</p>
+                <a *ngIf="login.isLoggedIn()" href="" (click)="logout()" class="nav-item nav-link">Logout</a>
 
+            </div>
+        </div>
+    </div>
+</nav>
     
